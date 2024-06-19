@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[1,-4,36,1910,1011,421,4,9,-100,3,90];
+        let max=arr[0];
+        let index;
+        for (let i=0;i<arr.length;i++){
+            if (arr[i]>max){
+                max=arr[i];
+                index=i;
+            }
+        }
+        document.write("Số lớn nhất là: "+max + " tại vị trí " + index);
+    </script>
+</body>
+</html>

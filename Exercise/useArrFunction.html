@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // bai1//
+        // let myColor=["Red","Green","White","Black"];
+        // document.write(myColor.toString());
+
+        //bai2//
+        // let num=+prompt("Nhap vao 1 so: ");
+        // let str=num.toString();
+        // let result=[str[0]];
+        // for (let i=1; i<str.length;i++){
+        //     if (str[i-1]%2 === 0 && str[i]%2 === 0){
+        //         result.push('-' , str[i]);
+        //     }else{
+        //         result.push(str[i]);
+        //     }
+        //     console.log(result.join(''));
+        // }
+
+        //bai3
+        let str=prompt('Nhap vao 1 chuoi: ');
+        let result=[];
+        for (let i=0; i<str.length; i++){
+            if (str[i]===str[i].toUpperCase() && str[i] !== " "){
+                result[i]=str[i].toLowerCase();
+                continue;
+            }else if (str[i]===str[i].toLowerCase() && str[i] !==" "){
+                result[i]=str[i].toUpperCase();
+                continue;
+            }else if (str[i]===" "){
+                result[i]=" ";
+                continue;
+            }
+            i++
+        }
+        document.write(result);
+    </script>
+</body>
+</html>

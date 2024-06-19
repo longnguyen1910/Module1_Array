@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = [-9,1,4,5,19,10,-4,100,13,9];
+        let b = [-10,5,62,41,40,-13,400,32,1,10];
+        let c = [];
+        let length_a= a.length;
+        let length_b= b.length;
+        let length_c= length_a+length_b;
+        for (let i=0,j=10;i<length_a;){
+            c[i]=a[i];
+            c[j]=b[i];
+            i++;
+            j++;
+        }
+        console.log(c);
+
+    </script>
+</body>
+</html>
